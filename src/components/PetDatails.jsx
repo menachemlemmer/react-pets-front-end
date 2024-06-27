@@ -14,6 +14,9 @@ const PetDetails = (props) => {
         Age: {props.selected.age} year{props.selected.age > 1 ? "s" : ""} old
       </h2>
       <button onClick={() => props.handleFormView(props.selected)}>Edit</button>
+      <button onClick={() => props.handleDeletePet(props.selected._id)}>
+        Delete
+      </button>
     </div>
   );
 };
